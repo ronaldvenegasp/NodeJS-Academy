@@ -1,0 +1,17 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Weather app from udemy NodeJS course",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Ronald Venegas",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "postman-request": "^2.88.1-postman.23",
+    "request": "^2.88.2",
+    "yargs": "^15.3.1"
+  }
+}
