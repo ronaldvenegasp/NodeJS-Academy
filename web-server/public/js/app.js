@@ -28,20 +28,20 @@ weatherForm.addEventListener("submit", (event) => {
 * 3. Refresh the browser and test your work
 ================================================================================== */
   // Challenge solution:
-  fetch(`http://localhost:3000/weather?address=${location}`).then(
-    (response) => {
-      response.json().then((data) => {
-        if (data.error) {
-          messageOne.textContent = data.error;
-          return console.log(data.error);
-        }
-        messageOne.textContent = data.location;
-        messageTwo.textContent = data.forecast;
-        // console.log(data.location);
-        // console.log(data.forecast);
-      });
-    }
-  );
+  // fetch(`http://localhost:3000/weather?address=${location}`).then(
+  // This is changed so it can run in Heroku
+  fetch(`/weather?address=${location}`).then((response) => {
+    response.json().then((data) => {
+      if (data.error) {
+        messageOne.textContent = data.error;
+        return console.log(data.error);
+      }
+      messageOne.textContent = data.location;
+      messageTwo.textContent = data.forecast;
+      // console.log(data.location);
+      // console.log(data.forecast);
+    });
+  });
   /* =============================================================================== */
 });
 /* =============================================================================== */
