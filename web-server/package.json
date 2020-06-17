@@ -4,8 +4,7 @@
   "description": "Web server",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon src/app.js -e js,hbs",
-    "start": "node src/app.js -e js,hbs"
+    "start": "nodemon src/app.js -e js,hbs"
   },
   "keywords": [],
   "author": "Ronald Venegas",
@@ -16,8 +15,5 @@
     "hbs": "^4.1.1",
     "postman-request": "^2.88.1-postman.23",
     "request": "^2.88.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.4"
   }
 }
