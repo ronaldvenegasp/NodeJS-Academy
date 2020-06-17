@@ -1,4 +1,3 @@
-// const request = require("request"); // Request module has been deprecated
 const request = require("postman-request");
 
 // Geolocation API Key
