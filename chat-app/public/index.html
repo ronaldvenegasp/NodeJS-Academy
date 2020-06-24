@@ -3,16 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chat app</title>
+    <link rel="icon" href="/img/favicon.png" />
+    <link rel="stylesheet" href="/css/styles.min.css" />
+    <title>Chat App</title>
   </head>
   <body>
-    <h1>Chat app!</h1>
-    <form id="message-form" autocomplete="off">
-      <input type="text" name="message" placeholder="Write your message here" />
-      <button type="submit">Send</button>
-    </form>
-    <button id="send-location">Share location</button>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="./js/chat.js"></script>
+    <div class="centered-form">
+      <div class="centered-form__box">
+        <h1>Join</h1>
+        <form action="/chat.html" autocomplete="off">
+          <label>Display name</label>
+          <input
+            type="text"
+            name="username"
+            placeholder="Display name"
+            required
+          />
+          <label>Room</label>
+          <input type="text" name="room" placeholder="Room" required />
+          <button>Join</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
