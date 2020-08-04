@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const Task = require("../models/Task");
-const auth = require("../db/middleware/auth");
+const auth = require("../middleware/auth");
 const router = new express.Router();
 
 router.post("/tasks", auth, async (req, res, next) => {
